@@ -138,7 +138,7 @@ if not os.path.exists(code_path):
 else:
     print(f"⚠️ Code file already exists: {code_path}")
 
-print("\n🚀 Happy coding! Don't forget to update the tracker when you're done.")
+print("\n🚀 Happy coding! Don't forget to update the tracker with ./finish when you're done.")
 
 # Log start time
 tracker_file = ".leetcode_tracker.json"
