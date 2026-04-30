@@ -57,9 +57,24 @@ class Solution:
         while j < len(word2):
             result.append(word2[j])
             j += 1
-        
         return "".join(result)
+        
 
+    def mergeAlternately2(self, word1: str, word2: str) -> str:
+        i = 0
+        result = []
+
+        # Iterate until we reach the end of the shorter string
+        while i < len(word1) and i < len(word2):
+            result.append(word1[i])
+            result.append(word2[i])
+            i += 1
+        
+        # Append the rest
+        result.append(word1[i:])
+        result.append(word2[i:])
+
+        return "".join(result)
 
 # --- TESTS ---
 if __name__ == '__main__':
@@ -67,7 +82,7 @@ if __name__ == '__main__':
     word1 = "abc"
     word2 = "pqr"
     expect = "apbqcr"
-    assert Solution().mergeAlternately(word1, word2) == expect
+    assert Solution().mergeAlternately2(word1, word2) == expect
     # Add your test cases here
     # Example: assert Solution().method_name(args) == expected_output
     print('All tests passed!')

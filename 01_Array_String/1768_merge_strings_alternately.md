@@ -1,14 +1,17 @@
-## 1768. Merge Strings Alternately
+# 1768. Merge Strings Alternately
 
-**Core Pattern:** (e.g., Fast & Slow Pointers)
-**Tricky Edge Case:** (e.g., Array with all identical elements)
+- **Core Pattern:** Two Pointers (or Single Pointer with bounds checking)
+- **Tricky Edge Case:** Strings of unequal lengths. The tricky part is gracefully handling the "leftover" characters of the longer string without going out of bounds on the shorter string.
 
-### The "Aha!" Moment
-*Write 1-2 sentences on the core intuition required to solve this. If you had to explain the trick to someone in an elevator, what would you say?*
+## The "Aha!" Moment
 
-### Complexity
-* **Time:** O(?) - 
-* **Space:** O(?) - 
+You only need to alternate characters up to the length of the *shorter* string. Once you hit the end of the shorter string, you can simply append the entire remainder of the longer string at once (using slicing like `word1[i:]`), because string slices handle out-of-bounds indices gracefully by just returning an empty string.
 
-### Alternative Approaches
-* Mention if there was a brute-force way and why it fails (e.g., TLE).
+## Complexity
+
+- **Time:** O(?) - O(N + M)
+- **Space:** O(?) - O(N + M)
+
+## Alternative Approaches
+
+N/A
