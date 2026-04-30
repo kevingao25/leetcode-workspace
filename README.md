@@ -20,13 +20,21 @@ Organized by fundamental patterns, aligned with the LeetCode 75 groupings:
 - `05_Hash_Map_Set/`
 - `...`
 
+## Features
+
+* **Auto-Fetch**: `./start.py` pulls the problem description and starter code directly from LeetCode.
+* **Time Tracking**: The workspace silently logs how long it takes you to solve a problem.
+* **Local Testing**: Generates a local test block at the bottom of your Python files.
+* **Spaced Repetition**: `./review.py` automatically tells you which problems you should practice today.
+* **Git Automation**: `./finish.py` automatically commits your progress.
+
 ## The Workflow
 
-1. **Start a Problem**: Run `./start.py "01_Array_String" "1768. Merge Strings Alternately"` to generate a one-pager template and your code file.
-2. **Solve**: Implement your solution locally (in Python, TS, Rust, C++).
-3. **Review**: Use AI (e.g. Cursor) to critique space/time complexity, suggest idiomatic syntax, or generate tricky edge cases.
+1. **Daily Review**: Run `./review.py` to see what past problems you need to practice today based on spaced repetition.
+2. **Start a Problem**: Run `./start.py "01_Array_String" "1768. Merge Strings Alternately"`. This generates a one-pager template and your code file with the LeetCode description and starter code.
+3. **Solve & Test**: Implement your solution locally and verify it using the test block.
 4. **Document**: Fill out the generated Markdown one-pager using the template for future reference.
-5. **Track**: Run `./finish.py "1768. Merge Strings Alternately" 4` to update your progress in PROGRESS.md!
+5. **Track & Commit**: Run `./finish.py 4` (with your confidence score 1-5) to update `PROGRESS.md`, record your time, and automatically commit to Git!
 
 ---
 
