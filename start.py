@@ -5,7 +5,6 @@ import json
 import urllib.request
 import re
 import time
-import textwrap
 from html.parser import HTMLParser
 
 class MLStripper(HTMLParser):
@@ -26,15 +25,12 @@ class MLStripper(HTMLParser):
 def strip_tags(html):
     s = MLStripper()
     s.feed(html)
-    text = re.sub(r"\n\s*\n", "\n\n", s.get_data()).strip()
-    wrapped_lines = []
-    for paragraph in text.split("\n\n"):
-        wrapped_lines.append(textwrap.fill(paragraph, width=100))
-    return "\n\n".join(wrapped_lines)
+    return re.sub(r"\n\s*\n", "\n\n", s.get_data()).strip()
 
 def get_leetcode_data(problem_name):
     # Remove leading numbers and dots
-    name = re.sub(r"^\d+\.\s*", "", problem_name).lower()
+    name = re.sub(r"^\d+[\.\-_]?\s*", "", problem_name).lower()
+    name = name.replace("_", " ")
     # Replace special characters and punctuation with spaces, then collapse spaces
     name = re.sub(r"[^\w\s-]", "", name)
     title_slug = "-".join(name.split())
@@ -134,6 +130,13 @@ if not os.path.exists(code_path):
         else:
             f.write('# Write your solution here\n')
             
+        f.write('\n\n# --- TESTS ---\n')
+        f.write("if __name__ == '__main__':\n")
+        f.write("    print('Running tests...')\n")
+        f.write("    # Add your test cases here\n")
+        f.write("    # Example: assert Solution().method_name(args) == expected_output\n")
+        f.write("    print('All tests passed!')\n")
+            
     print(f"✅ Created code file: {code_path}")
 else:
     print(f"⚠️ Code file already exists: {code_path}")
@@ -143,13 +146,10 @@ print("\n🚀 Happy coding! Don't forget to update the tracker with ./finish whe
 # Log start time
 tracker_file = ".leetcode_tracker.json"
 try:
-    if os.path.exists(tracker_file):
-        with open(tracker_file, "r") as f:
-            data = json.load(f)
-    else:
-        data = {}
-    
-    data[problem] = time.time()
+    data = {
+        "problem": problem,
+        "start_time": time.time()
+    }
     with open(tracker_file, "w") as f:
         json.dump(data, f)
 except Exception:

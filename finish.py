@@ -7,29 +7,33 @@ import subprocess
 from datetime import datetime
 import re
 
-if len(sys.argv) < 3:
-    print("Usage: ./finish.py <Problem_Name> <Confidence (1-5)>")
-    print("Example: ./finish.py '1768. Merge Strings Alternately' 4")
+if len(sys.argv) < 2:
+    print("Usage: ./finish.py <Confidence (1-5)>")
+    print("Example: ./finish.py 4")
     sys.exit(1)
 
-problem = sys.argv[1]
 try:
-    confidence = int(sys.argv[2])
+    confidence = int(sys.argv[1])
     if confidence < 1 or confidence > 5:
         raise ValueError
 except ValueError:
     print("Error: Confidence must be an integer between 1 and 5.")
     sys.exit(1)
 
-# Time Tracking
-time_spent_str = "N/A"
+# Read problem and time from tracker
 tracker_file = ".leetcode_tracker.json"
+problem = "Unknown Problem"
+time_spent_str = "N/A"
+
 if os.path.exists(tracker_file):
     try:
         with open(tracker_file, "r") as f:
             data = json.load(f)
-        if problem in data:
-            start_time = data[problem]
+        
+        problem = data.get("problem", "Unknown Problem")
+        start_time = data.get("start_time")
+        
+        if start_time:
             elapsed_seconds = int(time.time() - start_time)
             m, s = divmod(elapsed_seconds, 60)
             h, m = divmod(m, 60)
@@ -39,8 +43,23 @@ if os.path.exists(tracker_file):
                 time_spent_str = f"{m}m {s}s"
             else:
                 time_spent_str = f"{s}s"
-    except Exception:
-        pass
+                
+        # Clean up tracker file since we only work on one at a time
+        os.remove(tracker_file)
+    except Exception as e:
+        print(f"⚠️ Error reading tracker file: {e}")
+else:
+    print("⚠️ No active problem found. Please run ./start.py first next time!")
+    # If there's a second arg, maybe they did ./finish.py "Problem" 4 by accident?
+    if len(sys.argv) == 3:
+        try:
+            confidence = int(sys.argv[2])
+            problem = sys.argv[1]
+            print(f"Using provided problem name: {problem}")
+        except ValueError:
+            sys.exit(1)
+    else:
+        sys.exit(1)
 
 date_str = datetime.now().strftime("%Y-%m-%d")
 progress_file = "PROGRESS.md"
@@ -59,11 +78,9 @@ with open(progress_file, "r") as f:
 header_idx = -1
 for i, line in enumerate(lines):
     if "| Problem Name |" in line:
-        # Check if Time Spent column exists, if not, upgrade the table
         if "Time Spent" not in line:
             lines[i] = "| Problem Name | Last Date Attempt | Time Spent | Confidence (1-5) |\n"
             lines[i+1] = "| :--- | :--- | :--- | :---: |\n"
-            # Upgrade existing rows
             for j in range(i+2, len(lines)):
                 if lines[j].strip() and lines[j].startswith("|"):
                     parts = lines[j].split('|')
@@ -113,29 +130,13 @@ print(f"✅ Logged progress for '{problem}' with confidence {confidence} on {dat
 if time_spent_str != "N/A":
     print(f"⏱️  Time spent: {time_spent_str}")
 
-# Auto-Formatting (Linting)
-print("\n🧹 Formatting code...")
-try:
-    res = subprocess.run(["python3", "-m", "black", "."], check=False, capture_output=True)
-    if res.returncode == 0:
-        print("✅ Formatted with black!")
-    else:
-        print("⚠️  'black' formatter not found or failed. (Try `pip install black`)")
-except Exception:
-    pass
-
-# Git Automation
+# Git Automation (No Auto Push)
 print("\n🐙 Committing to Git...")
 try:
     subprocess.run(["git", "add", "."], check=True, capture_output=True)
     res = subprocess.run(["git", "commit", "-m", f"Solve {problem} | Confidence: {confidence}"], check=False, capture_output=True)
     if res.returncode == 0:
-        print("✅ Committed changes!")
-        push_res = subprocess.run(["git", "push"], check=False, capture_output=True, timeout=10)
-        if push_res.returncode == 0:
-            print("🚀 Successfully pushed to GitHub!")
-        else:
-            print("⚠️  Committed locally, but could not push to remote. (Maybe no remote configured?)")
+        print("✅ Committed changes locally! (Run `git push` manually when ready)")
     else:
         print("⚠️  Nothing to commit.")
 except Exception as e:
