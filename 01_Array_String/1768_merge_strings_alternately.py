@@ -83,6 +83,4 @@ if __name__ == '__main__':
     word2 = "pqr"
     expect = "apbqcr"
     assert Solution().mergeAlternately2(word1, word2) == expect
-    # Add your test cases here
-    # Example: assert Solution().method_name(args) == expected_output
     print('All tests passed!')

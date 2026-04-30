@@ -9,8 +9,8 @@ You only need to alternate characters up to the length of the *shorter* string. 
 
 ## Complexity
 
-- **Time:** O(?) - O(N + M)
-- **Space:** O(?) - O(N + M)
+- **Time:** O(N + M)
+- **Space:** O(N + M)
 
 ## Alternative Approaches
 
