@@ -6,4 +6,4 @@
 ## Complexity
 
 - **Time:** O(log N) for average but O(N) in worst case
-- **Space:** O(log N)
+- **Space:** O(log N) for average but O(N) in worst case
