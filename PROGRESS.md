@@ -8,3 +8,4 @@
 | Greatest Common Divisor of Strings | 2026-05-01 | 17m 55s | 2 |
 | 1431. Kids With the Greatest Number of Candies | 2026-05-01 | 4m 28s | 5 |
 | 643. Maximum Average Subarray I | 2026-05-02 | 6m 57s | 5 |
+| 605. Can Place Flowers | 2026-05-02 | 11m 36s | 5 |
