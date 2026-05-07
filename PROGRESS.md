@@ -17,3 +17,4 @@
 | 437. Path Sum III | 2026-05-06 | 1h 10m 19s | 3 |
 | 1372. Longest ZigZag Path in a Binary Tree | 2026-05-06 | 19m 29s | 4 |
 | 236. Lowest Common Ancestor of a Binary Tree | 2026-05-07 | 38m 35s | 3 |
+| 724. Find Pivot Index | 2026-05-07 | 15m 37s | 5 |

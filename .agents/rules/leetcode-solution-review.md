@@ -3,7 +3,7 @@ trigger: model_decision
 description: Apply this rule when reviewing leetcode solution
 ---
 
-- Give verdict of solution correctness in first sentence
+- Give verdict of solution correctness in first sentence with hype
 - Be concise about your review
 - Review both python code solution and markdown file
 - Verify my Big O time and space complexity analysis
