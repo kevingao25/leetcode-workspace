@@ -12,3 +12,4 @@
 | Reverse Vowels of a String | 2026-05-03 | 11m 32s | 5 |
 | 151. Reverse Words in a String | 2026-05-03 | 10m 44s | 5 |
 | 104. Maximum Depth of Binary Tree | 2026-05-06 | 9m 2s | 5 |
+| 872. Leaf-Similar Trees | 2026-05-06 | 11m 59s | 5 |
