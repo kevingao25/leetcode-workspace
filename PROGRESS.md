@@ -18,3 +18,4 @@
 | 1372. Longest ZigZag Path in a Binary Tree | 2026-05-06 | 19m 29s | 4 |
 | 236. Lowest Common Ancestor of a Binary Tree | 2026-05-07 | 38m 35s | 3 |
 | 724. Find Pivot Index | 2026-05-07 | 15m 37s | 5 |
+| 199. Binary Tree Right Side View | 2026-05-07 | 24m 41s | 2 |
