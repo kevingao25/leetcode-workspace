@@ -13,3 +13,4 @@
 | 151. Reverse Words in a String | 2026-05-03 | 10m 44s | 5 |
 | 104. Maximum Depth of Binary Tree | 2026-05-06 | 9m 2s | 5 |
 | 872. Leaf-Similar Trees | 2026-05-06 | 11m 59s | 5 |
+| 1448. Count Good Nodes in Binary Tree | 2026-05-06 | 16m 13s | 5 |
