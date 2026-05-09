@@ -23,3 +23,4 @@
 | 450. Delete Node in a BST | 2026-05-07 | 55m 6s | 1 |
 | 841. Keys and Rooms | 2026-05-08 | 26m 16s | 5 |
 | 547. Number of Provinces | 2026-05-08 | 21m 54s | 4 |
+| 1466. Reorder Routes to Make All Paths Lead to the City Zero | 2026-05-08 | 32m 9s | 3 |

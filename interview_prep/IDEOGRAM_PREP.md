@@ -50,8 +50,8 @@ These are standard, highly-tested patterns that prove you understand efficient d
 * [ ] **323. Number of Connected Components in an Undirected Graph** (Medium) - *Core graph exploration.*
 * [ ] **210. Course Schedule II** (Medium) - *Follow-up to Course Schedule, requires building the actual topological sort path.*
 * [ ] **785. Is Graph Bipartite?** (Medium) - *Classic graph coloring using BFS or DFS.*
-* [ ] **841. Keys and Rooms** (Medium) - *Excellent warmup for standard Graph DFS (From LeetCode 75).*
-* [ ] **547. Number of Provinces** (Medium) - *Classic connected components problem (From LeetCode 75).*
+* [X] **841. Keys and Rooms** (Medium) - *Excellent warmup for standard Graph DFS (From LeetCode 75).*
+* [X] **547. Number of Provinces** (Medium) - *Classic connected components problem (From LeetCode 75).*
 * [ ] **1466. Reorder Routes to Make All Paths Lead to the City Zero** (Medium) - *Clever trick involving traversing a directed graph as if it were undirected (From LeetCode 75).*
 
 ### 4. Hash Maps & Arrays (Speed optimizations)
