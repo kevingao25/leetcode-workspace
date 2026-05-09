@@ -31,7 +31,7 @@ Images are just giant 2D arrays. If your friend was asked a BFS/DFS question, th
 Ideogram's competitive edge is typography (text in images). They care about text parsing.
 
 * [ ] **3. Longest Substring Without Repeating Characters** (Medium) - *Classic sliding window on a string.*
-* [ ] **394. Decode String** (Medium) - *Uses a Stack to parse nested strings. Highly relevant for prompt processing!*
+* [X] **394. Decode String** (Medium) - *Uses a Stack to parse nested strings. Highly relevant for prompt processing!*
 * [ ] **20. Valid Parentheses** (Easy) - *Baseline stack/parsing question.*
 * [ ] **424. Longest Repeating Character Replacement** (Medium) - *Sliding window string optimization.*
 
