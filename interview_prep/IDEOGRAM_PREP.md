@@ -14,7 +14,7 @@ These patterns are the absolute bread and butter for AI and image processing com
 
 Images are just giant 2D arrays. If your friend was asked a BFS/DFS question, there is a very high chance it was on a grid.
 
-* [ ] **200. Number of Islands** (Medium) - *The absolute must-know baseline for DFS/BFS on a grid.*
+* [X] **200. Number of Islands** (Medium) - *The absolute must-know baseline for DFS/BFS on a grid.*
 * [ ] **695. Max Area of Island** (Medium) - *A slight variation of the above.*
 * [X] **994. Rotting Oranges** (Medium) - *The holy grail of Multi-source BFS on a grid. Extremely high yield.*
 * [ ] **542. 01 Matrix** (Medium) - *Another highly-tested Multi-source BFS pattern.*
