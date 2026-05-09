@@ -19,7 +19,7 @@ Images are just giant 2D arrays. If your friend was asked a BFS/DFS question, th
 * [X] **994. Rotting Oranges** (Medium) - *The holy grail of Multi-source BFS on a grid. Extremely high yield.*
 * [ ] **542. 01 Matrix** (Medium) - *Another highly-tested Multi-source BFS pattern.*
 * [ ] **130. Surrounded Regions** (Medium) - *Tests your ability to run DFS specifically from the edges of a grid.*
-* [ ] **733. Flood Fill** (Easy) - *Great warmup for grid DFS. Very intuitive.*
+* [X] **733. Flood Fill** (Easy) - *Great warmup for grid DFS. Very intuitive.*
 * [ ] **1091. Shortest Path in Binary Matrix** (Medium) - *Essential BFS grid question. Finding the shortest path in an 8-directional grid.*
 * [X] **1926. Nearest Exit from Entrance in Maze** (Medium) - *Classic BFS pathfinding on a grid (From LeetCode 75).*
 * [ ] **286. Walls and Gates** (Medium) - *Another top-tier multi-source BFS.*
