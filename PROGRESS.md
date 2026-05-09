@@ -24,4 +24,5 @@
 | 841. Keys and Rooms | 2026-05-08 | 26m 16s | 5 |
 | 547. Number of Provinces | 2026-05-08 | 21m 54s | 4 |
 | 1466. Reorder Routes to Make All Paths Lead to the City Zero | 2026-05-08 | 32m 9s | 3 |
-| 399. Evaluate Division | 2026-05-08 | 26m 30s | 5 |
+| 399. Evaluate Division | 2026-05-08 | 26m 30s | N/A (don't like it) |
+| 994. Rotting Oranges | 2026-05-08 | 28m 13s | 4 |
