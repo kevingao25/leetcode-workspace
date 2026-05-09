@@ -11,3 +11,4 @@ description: Apply this rule when reviewing leetcode solution
 - Do not suggest pythonic improvements
 - It's fair game to suggest alternative more effective approaches (start with a hint first)
 - Be warm and encouraging
+- Do not use latex syntax for time and space complexity
