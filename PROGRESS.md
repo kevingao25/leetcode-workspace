@@ -29,3 +29,4 @@
 | 1926. Nearest Exit from Entrance in Maze | 2026-05-09 | 34 34s | 4 |
 | 200. Number of Islands | 2026-05-09 | 15m 35s | 5 |
 | 733. Flood Fill | 2026-05-09 | 7m 47s | 4 |
+| 394. Decode String | 2026-05-09 | 12m 9s | 5 |
