@@ -16,12 +16,12 @@ Images are just giant 2D arrays. If your friend was asked a BFS/DFS question, th
 
 * [ ] **200. Number of Islands** (Medium) - *The absolute must-know baseline for DFS/BFS on a grid.*
 * [ ] **695. Max Area of Island** (Medium) - *A slight variation of the above.*
-* [ ] **994. Rotting Oranges** (Medium) - *The holy grail of Multi-source BFS on a grid. Extremely high yield.*
+* [X] **994. Rotting Oranges** (Medium) - *The holy grail of Multi-source BFS on a grid. Extremely high yield.*
 * [ ] **542. 01 Matrix** (Medium) - *Another highly-tested Multi-source BFS pattern.*
 * [ ] **130. Surrounded Regions** (Medium) - *Tests your ability to run DFS specifically from the edges of a grid.*
 * [ ] **733. Flood Fill** (Easy) - *Great warmup for grid DFS. Very intuitive.*
 * [ ] **1091. Shortest Path in Binary Matrix** (Medium) - *Essential BFS grid question. Finding the shortest path in an 8-directional grid.*
-* [ ] **1926. Nearest Exit from Entrance in Maze** (Medium) - *Classic BFS pathfinding on a grid (From LeetCode 75).*
+* [X] **1926. Nearest Exit from Entrance in Maze** (Medium) - *Classic BFS pathfinding on a grid (From LeetCode 75).*
 * [ ] **286. Walls and Gates** (Medium) - *Another top-tier multi-source BFS.*
 * [ ] **48. Rotate Image** (Medium) - *Classic 2D array manipulation.*
 * [ ] **54. Spiral Matrix** (Medium) - *Tests your ability to manage matrix boundaries without getting lost.*
@@ -44,7 +44,7 @@ These are standard, highly-tested patterns that prove you understand efficient d
 ### 3. Graphs and BFS/DFS (State Exploration)
 
 * [ ] **207. Course Schedule** (Medium) - *Topological sort. Proves you understand directed graphs.*
-* [ ] **399. Evaluate Division** (Medium) - *Classic DFS/BFS graph traversal with edge weights. Very common.*
+* [X] **399. Evaluate Division** (Medium) - *Classic DFS/BFS graph traversal with edge weights. Very common.*
 * [ ] **133. Clone Graph** (Medium) - *Tests your ability to copy complex reference structures using Hash Maps and BFS/DFS.*
 * [ ] **127. Word Ladder** (Hard/Medium) - *Finding the shortest path between words. (Skip if too hard, but good to know the BFS pattern).*
 * [ ] **323. Number of Connected Components in an Undirected Graph** (Medium) - *Core graph exploration.*
@@ -52,7 +52,7 @@ These are standard, highly-tested patterns that prove you understand efficient d
 * [ ] **785. Is Graph Bipartite?** (Medium) - *Classic graph coloring using BFS or DFS.*
 * [X] **841. Keys and Rooms** (Medium) - *Excellent warmup for standard Graph DFS (From LeetCode 75).*
 * [X] **547. Number of Provinces** (Medium) - *Classic connected components problem (From LeetCode 75).*
-* [ ] **1466. Reorder Routes to Make All Paths Lead to the City Zero** (Medium) - *Clever trick involving traversing a directed graph as if it were undirected (From LeetCode 75).*
+* [X] **1466. Reorder Routes to Make All Paths Lead to the City Zero** (Medium) - *Clever trick involving traversing a directed graph as if it were undirected (From LeetCode 75).*
 
 ### 4. Hash Maps & Arrays (Speed optimizations)
 

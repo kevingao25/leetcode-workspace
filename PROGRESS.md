@@ -26,3 +26,4 @@
 | 1466. Reorder Routes to Make All Paths Lead to the City Zero | 2026-05-08 | 32m 9s | 3 |
 | 399. Evaluate Division | 2026-05-08 | 26m 30s | N/A (don't like it) |
 | 994. Rotting Oranges | 2026-05-08 | 28m 13s | 4 |
+| 1926. Nearest Exit from Entrance in Maze | 2026-05-09 | 34 34s | 4 |
