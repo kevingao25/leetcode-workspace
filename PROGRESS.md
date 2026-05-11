@@ -30,3 +30,4 @@
 | 200. Number of Islands | 2026-05-09 | 15m 35s | 5 |
 | 733. Flood Fill | 2026-05-09 | 7m 47s | 4 |
 | 394. Decode String | 2026-05-09 | 12m 9s | N/A (tedious problem) |
+| 48. Rotate Image | 2026-05-10 | 6m 1s | 4 |
