@@ -31,3 +31,4 @@
 | 733. Flood Fill | 2026-05-09 | 7m 47s | 4 |
 | 394. Decode String | 2026-05-09 | 12m 9s | N/A (tedious problem) |
 | 48. Rotate Image | 2026-05-10 | 6m 1s | 4 |
+| 334. Increasing Triplet Subsequence | 2026-05-16 | 33m 25s | 2 |

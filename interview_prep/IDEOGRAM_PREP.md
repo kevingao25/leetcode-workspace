@@ -23,7 +23,7 @@ Images are just giant 2D arrays. If your friend was asked a BFS/DFS question, th
 * [ ] **1091. Shortest Path in Binary Matrix** (Medium) - *Essential BFS grid question. Finding the shortest path in an 8-directional grid.*
 * [X] **1926. Nearest Exit from Entrance in Maze** (Medium) - *Classic BFS pathfinding on a grid (From LeetCode 75).*
 * [ ] **286. Walls and Gates** (Medium) - *Another top-tier multi-source BFS.*
-* [ ] **48. Rotate Image** (Medium) - *Classic 2D array manipulation.*
+* [X] **48. Rotate Image** (Medium) - *Classic 2D array manipulation.*
 * [ ] **54. Spiral Matrix** (Medium) - *Tests your ability to manage matrix boundaries without getting lost.*
 
 ### 2. String Parsing & Manipulation
