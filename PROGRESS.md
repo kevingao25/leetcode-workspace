@@ -34,3 +34,4 @@
 | 334. Increasing Triplet Subsequence | 2026-05-16 | 33m 25s | 2 |
 | 1456. Maximum Number of Vowels in a Substring of Given Length | 2026-05-16 | 8m 16s | 5 |
 | 1004. Max Consecutive Ones III | 2026-05-16 | 8m 5s | 5 |
+| 1493. Longest Subarray of 1's After Deleting One Element | 2026-05-16 | 9m 15s | 5 |
