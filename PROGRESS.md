@@ -33,3 +33,4 @@
 | 48. Rotate Image | 2026-05-10 | 6m 1s | 4 |
 | 334. Increasing Triplet Subsequence | 2026-05-16 | 33m 25s | 2 |
 | 1456. Maximum Number of Vowels in a Substring of Given Length | 2026-05-16 | 8m 16s | 5 |
+| 1004. Max Consecutive Ones III | 2026-05-16 | 8m 5s | 5 |

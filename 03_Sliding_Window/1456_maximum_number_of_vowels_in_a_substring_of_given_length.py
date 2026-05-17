@@ -47,12 +47,3 @@ class Solution:
             i += 1
         
         return result
-
-
-
-# --- TESTS ---
-if __name__ == '__main__':
-    print('Running tests...')
-    # Add your test cases here
-    # Example: assert Solution().method_name(args) == expected_output
-    print('All tests passed!')
